@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
@@ -9,6 +9,7 @@ export const Container = styled.div`
   border-radius: 2px;
   background: #131313;
   max-width: 400px;
+  color: var(--white);
 
   img {
     max-width: 100px;
@@ -26,6 +27,4 @@ export const Container = styled.div`
       font-size: 14px;
     }
   }
-
-`
-;
+`;

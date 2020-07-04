@@ -11,12 +11,12 @@ import { SearchButton, SearchDrawer, SearchHeader, SearchBody } from './styles';
 
 interface RootState {
   productsReducer: {
-    data: any
-  }
+    data: any;
+  };
 }
 
 const Search: React.FC = () => {
-  const items = useSelector((state: RootState) => state.productsReducer.data)
+  const items = useSelector((state: RootState) => state.productsReducer.data);
   const [showSearch, toggleShowSearch] = useState(false);
   const [results, setResults] = useState([]);
   const [value, setValue] = useState('');
@@ -24,11 +24,13 @@ const Search: React.FC = () => {
   const debouncedSearchTerm = Debounce(value, 500);
 
   useEffect(() => {
-    if(debouncedSearchTerm) {
-      const products = items.filter((item: any) => item.name.toLowerCase().includes(debouncedSearchTerm));
+    if (debouncedSearchTerm) {
+      const products = items.filter((item: any) =>
+        item.name.toLowerCase().includes(debouncedSearchTerm),
+      );
       setResults(products);
     }
-  }, [debouncedSearchTerm, items])
+  }, [debouncedSearchTerm, items]);
 
   function handleProducts(event: any) {
     event.preventDefault();
@@ -37,20 +39,18 @@ const Search: React.FC = () => {
   }
 
   function handleSearch() {
-    if(showSearch) {
+    if (showSearch) {
       toggleShowSearch(false);
       setValue('');
       setResults([]);
     } else {
-      toggleShowSearch(true)
+      toggleShowSearch(true);
     }
   }
 
   return (
     <>
-      <SearchButton
-        onClick={handleSearch}
-      >
+      <SearchButton onClick={handleSearch}>
         <FiSearch size={24} />
       </SearchButton>
 
@@ -60,14 +60,14 @@ const Search: React.FC = () => {
             <div>
               <h3>Buscar Produtos</h3>
               <button onClick={handleSearch}>
-                <AiOutlineClose size={18} color='#fff' />
+                <AiOutlineClose size={18} color="#000" />
               </button>
             </div>
 
             <SearchHeader>
               <input
-                type='text'
-                placeholder='Pesquisar'
+                type="text"
+                placeholder="Pesquisar"
                 onChange={(event) => handleProducts(event)}
               />
               <button>
@@ -77,11 +77,12 @@ const Search: React.FC = () => {
 
             <SearchBody>
               <ul>
-                {results && results.map((item:any) => (
-                  <li key={item.id} onClick={handleSearch}>
-                    <Product product={item} />
-                  </li>
-                ))}
+                {results &&
+                  results.map((item: any) => (
+                    <li key={item.index} onClick={handleSearch}>
+                      <Product product={item} />
+                    </li>
+                  ))}
               </ul>
             </SearchBody>
           </SearchDrawer>
@@ -91,5 +92,4 @@ const Search: React.FC = () => {
   );
 };
 
-
-export default Search
+export default Search;

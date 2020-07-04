@@ -2,11 +2,8 @@ import React, { useState } from 'react';
 
 import ModalImage from '../ModalImage';
 
-import img from '../../images/bottom.jpeg'
-// import './styles.css';
-
 interface ImgProps {
-  url: string
+  url: string;
 }
 
 const ProductImage: React.FC<ImgProps> = ({ url }) => {
@@ -15,10 +12,10 @@ const ProductImage: React.FC<ImgProps> = ({ url }) => {
   return (
     <>
       <ModalImage url={url} show={show} setShow={setShow} />
-      <div className='product__image' onClick={() => setShow(true)}>
-        {url ? <img src={img} alt='Foto do produto' /> : <img src='https://via.placeholder.com/470x594/FFFFFF/?text=Imagem+Indisponível' alt='Foto do produto' />}
+      <div className="product__image" onClick={() => setShow(true)}>
+        <img src={url} alt="pokemon" />
       </div>
     </>
   );
 };
-export default ProductImage
+export default ProductImage;

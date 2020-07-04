@@ -18,6 +18,13 @@ interface ProductProps {
     index: number;
     name: string;
     url: string;
+    image: string;
+    on_sale: boolean;
+    regular_price: number;
+    actual_price: number;
+    discount_percentage: number;
+    installments: number;
+    quantity: string;
   };
 }
 
@@ -34,7 +41,6 @@ const ListProducts: React.FC = () => {
     dispatch(actions.getProducts());
   }, [dispatch]);
 
-  console.log(products);
   return (
     <List>
       <Options>

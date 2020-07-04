@@ -10,7 +10,14 @@ function* getProducts() {
     const response = yield call(api.getAll);
 
     const products = response.results.map((item, index) => {
-      return { index, ...item };
+      return {
+        index,
+        ...item,
+        actual_price: 20.0,
+        regular_price: 69.0,
+        on_sale: true,
+        installments: 3,
+      };
     });
 
     yield put(actions.getProductsSuccess(products));

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Item = styled.li`
   max-width: 320px;
@@ -11,7 +11,7 @@ export const Item = styled.li`
     align-items: center;
     justify-content: center;
   }
-`
+`;
 
 export const Image = styled.div`
   position: relative;
@@ -22,7 +22,7 @@ export const Image = styled.div`
   img {
     width: 100%;
     height: auto;
-    transition: all .8s;
+    transition: all 0.8s;
   }
 
   div {
@@ -51,7 +51,7 @@ export const Image = styled.div`
       display: block;
     }
   }
-`
+`;
 
 export const Description = styled.div`
   display: flex;
@@ -71,9 +71,10 @@ export const Description = styled.div`
   label {
     font-size: 14px;
     color: var(--primary);
+    text-decoration: line-through;
   }
   strong {
     font-size: 15px;
     font-weight: 400;
   }
-`
+`;

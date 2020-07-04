@@ -1,7 +1,6 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-
-export const SearchButton = styled.button `
+export const SearchButton = styled.button`
   border: 0;
   background: transparent;
   color: var(--black);
@@ -12,7 +11,7 @@ export const SearchButton = styled.button `
   &:hover {
     opacity: 0.7;
   }
-`
+`;
 
 export const SearchDrawer = styled.section`
   display: block;
@@ -23,7 +22,7 @@ export const SearchDrawer = styled.section`
   top: 0;
   left: 0;
   font-size: 14px;
-`
+`;
 
 export const SearchHeader = styled.div`
   display: flex;
@@ -41,7 +40,7 @@ export const SearchHeader = styled.div`
     padding-left: 15px;
     width: 80%;
     height: 45px;
-    color: #FFF;
+    color: #fff;
     border: 1px solid rgb(39, 39, 39);
     background: #131313;
   }
@@ -49,11 +48,10 @@ export const SearchHeader = styled.div`
   input + button {
     width: 50px;
     height: 45px;
-    color: #FFF;
+    color: #fff;
     background: #131313;
   }
-
-`
+`;
 
 export const SearchBody = styled.div`
   display: flex;
@@ -70,4 +68,4 @@ export const SearchBody = styled.div`
     justify-content: center;
     margin: 10px 0;
   }
-`
+`;

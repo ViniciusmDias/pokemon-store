@@ -5,30 +5,30 @@ const actions = {
     type: actionsTypes.CART_REQUEST,
   }),
   selectSize: () => ({
-    type: actionsTypes.SELECT_SIZE_PRODUCT
+    type: actionsTypes.SELECT_SIZE_PRODUCT,
   }),
   addProduct: (product) => ({
     type: actionsTypes.ADD_PRODUCT,
-    payload: product
+    payload: product,
   }),
   addProductFailure: () => ({
     type: actionsTypes.ADD_PRODUCT_FAILURE,
   }),
   incrementQuantityProduct: (sku) => ({
     type: actionsTypes.INCREMENT_QUANTITY_PRODUCT,
-    payload: sku
+    payload: sku,
   }),
   decrementQuantityProduct: (sku) => ({
     type: actionsTypes.DECREMENT_QUANTITY_PRODUCT,
-    payload: sku
+    payload: sku,
   }),
   removeProduct: (sku) => ({
     type: actionsTypes.REMOVE_PRODUCT,
-    payload: sku
+    payload: sku,
   }),
   cleanCart: () => ({
     type: actionsTypes.CLEAN_CART,
   }),
-}
+};
 
 export default actions;

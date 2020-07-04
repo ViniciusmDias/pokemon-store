@@ -31,7 +31,7 @@ const Product: React.FC<RouteComponentProps<TParams>> = ({ match }) => {
       {products.map(
         (product: any) =>
           product.index === index && (
-            <SingleProduct key={product.id} product={product} />
+            <SingleProduct key={product.index} product={product} />
           ),
       )}
     </>

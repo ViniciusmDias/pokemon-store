@@ -24,8 +24,8 @@ export default createGlobalStyle`
     font-size: 2.2rem;
   }
   #root {
-    --secondary: #01a6baeb;
-    --primary: #f3d18a;
+    --secondary: #fcce00;
+    --primary: #245eaa;
     --transparency: #000000bf;
     --black: #000;
     --white: #fff;

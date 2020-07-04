@@ -18,7 +18,7 @@ const Navigation: React.FC = () => {
     <Container>
       <Search />
       <Cart />
-      <MenuLink to="/">poke store</MenuLink>
+      <MenuLink to="/">poke store </MenuLink>
       <aside>
         <Button
           onClick={handleClick}
