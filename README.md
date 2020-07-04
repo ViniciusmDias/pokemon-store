@@ -1,44 +1,69 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+  Pokemon Store </strong>
+</h3>
 
-## Available Scripts
+<p align="center">
+  <a aria-label="Node version" href="https://nodejs.org/en/blog/release/v12.16.3/">
+    <img src="https://img.shields.io/badge/node.js@lts-12.14.1-informational?logo=Node.JS"></img>
+  </a>
+  <a aria-label="React version" href="https://github.com/facebook/react/blob/master/CHANGELOG.md#16131-march-19-2020">
+    <img src="https://img.shields.io/badge/react-16.12.0-informational?logo=react"></img>
+  </a>
+  <a aria-label="Typescript version" href="https://www.npmjs.com/package/typescript/v/3.7.2">
+    <img src="https://imgur.com/bLmkPCR"></img>
+  </a>
+</p>
 
-In the project directory, you can run:
+<p>
+  Project Name: <strong>Pokemon Store</strong>
+</p>
 
-### `yarn start`
+### Introduction
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In this challenge you will apply all the knowledge acquired during the course and will have to develop a Pokemon Store, integrated with the PokeApi.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Development
 
-### `yarn test`
+- In the root directory (/pokemon-store) of the project, install all the necessary libraries for development with the command:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```js
+  yarn install
+```
 
-### `yarn build`
+- In the root directory (/pokemon-store) of the project, start the application in development mode at [localhost](http://localhost:3000) with the command:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```js
+  yarn start
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Tech Introduction
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Fetch API
+- JS Functional: Map, Filter
+- Presentational and Container Components
+- Rails-Style Structure
+- React Hooks, useState, useEffect, useRef
+- React
+- React Router Dom
+- Private Routes
+- Redux: ActionTypes, Action Creators, Reducers, Store
+- Redux Persist: LocalStorage
+- Typescript
 
-### `yarn eject`
+#### Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The project contains the following folders
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+./src
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- /actions
+- /assets
+- /components => Reusable application components;
+- /config
+- /constants
+- /containers
+- /reducers
+- /routes
+- /store
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+---

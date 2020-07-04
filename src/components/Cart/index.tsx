@@ -42,7 +42,7 @@ const Cart: React.FC = () => {
   function handleCheck() {
     if (cartCounter > 0) {
       dispatch(actionsCart.cleanCart());
-      dispatch(actionsToast.addToast('YAY! Compra finalizada.', false));
+      dispatch(actionsToast.addToast('Obrigado por concluir a compra.', false));
     } else {
       dispatch(actionsToast.addToast('OOPS! Sacola Vazia.', true));
     }

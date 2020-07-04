@@ -28,7 +28,7 @@ const Product: React.FC<ProductProps> = ({ product }) => {
         />
         {product.on_sale && <div>{product.discount_percentage} off</div>}
 
-        <button>Ver produto</button>
+        <button>Ver pokemon</button>
       </Image>
 
       <Description>
