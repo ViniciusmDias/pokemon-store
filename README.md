@@ -2,6 +2,7 @@
   Pokemon Store </strong>
 </h3>
 
+<div display="flex" justify-content="center">
 <p align="center">
   <a aria-label="Node version" href="https://nodejs.org/en/blog/release/v12.16.3/">
     <img src="https://img.shields.io/badge/node.js@lts-12.14.1-informational?logo=Node.JS"></img>
@@ -9,9 +10,9 @@
   <a aria-label="React version" href="https://github.com/facebook/react/blob/master/CHANGELOG.md#16131-march-19-2020">
     <img src="https://img.shields.io/badge/react-16.12.0-informational?logo=react"></img>
   </a>
-  <a aria-label="Typescript version" href="https://www.npmjs.com/package/typescript/v/3.7.2">
-    <img src="https://imgur.com/bLmkPCR"></img>
-  </a>
+  
+<p align="center">
+  <img src="https://i.imgur.com/bLmkPCR.png"></img>  </a>
 </p>
 
 <p>
@@ -50,7 +51,7 @@ In this challenge you will apply all the knowledge acquired during the course an
 - Redux Persist: LocalStorage
 - Typescript
 
-#### Project Structure
+### Project Structure
 
 The project contains the following folders
 
