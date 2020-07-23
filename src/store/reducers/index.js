@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
 
-import productsReducer from './Products';
-import cartReducer from './Cart';
+import cardsReducer from './Cards';
 import toastReducer from './Toast';
 
 
 export default combineReducers({
-  productsReducer,
-  cartReducer,
+  cardsReducer,
   toastReducer
 });

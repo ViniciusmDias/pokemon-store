@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Navigation from '../components/Navigation';
-import ListProduct from '../containers/ListProducts';
+import ListCard from '../containers/ListCards';
 
 const Home: React.FC = () => {
   return (
     <>
       <Navigation />
-      <ListProduct />
+      <ListCard />
     </>
   );
 };

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import Cart from '../Cart';
 import Search from '../Search';
 
 import { Container, MenuLink, Button } from './styles';
@@ -17,8 +16,7 @@ const Navigation: React.FC = () => {
   return (
     <Container>
       <Search />
-      <Cart />
-      <MenuLink to="/">poke store </MenuLink>
+      <MenuLink to="/">Marvel QL</MenuLink>
       <aside>
         <Button
           onClick={handleClick}

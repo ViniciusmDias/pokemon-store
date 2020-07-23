@@ -1,9 +1,9 @@
-export default function Price(products) {
+export default function Price(cards) {
   const prices = [];
 
-  products.map((product) => {
-    const price = product.actual_price;
-    return prices.push(price * product.quantity);
+  cards.map((card) => {
+    const price = card.actual_price;
+    return prices.push(price * card.quantity);
   });
 
   const totalPrice = prices.reduce((sum, price) => sum + price, 0);

@@ -4,19 +4,19 @@ import { AiOutlineClose } from 'react-icons/ai';
 import { FiSearch } from 'react-icons/fi';
 
 import Drawer from '../../containers/Drawer';
-import Product from '../ProductSearch';
+import Card from '../CardSearch';
 import Debounce from '../../hooks/useDebounce';
 
 import { SearchButton, SearchDrawer, SearchHeader, SearchBody } from './styles';
 
 interface RootState {
-  productsReducer: {
+  cardsReducer: {
     data: any;
   };
 }
 
 const Search: React.FC = () => {
-  const items = useSelector((state: RootState) => state.productsReducer.data);
+  const items = useSelector((state: RootState) => state.cardsReducer.data);
   const [showSearch, toggleShowSearch] = useState(false);
   const [results, setResults] = useState([]);
   const [value, setValue] = useState('');
@@ -25,14 +25,14 @@ const Search: React.FC = () => {
 
   useEffect(() => {
     if (debouncedSearchTerm) {
-      const products = items.filter((item: any) =>
+      const cards = items.filter((item: any) =>
         item.name.toLowerCase().includes(debouncedSearchTerm),
       );
-      setResults(products);
+      setResults(cards);
     }
   }, [debouncedSearchTerm, items]);
 
-  function handleProducts(event: any) {
+  function handleCards(event: any) {
     event.preventDefault();
     const string = event.target.value;
     setValue(string.toLowerCase());
@@ -58,7 +58,7 @@ const Search: React.FC = () => {
         <Drawer>
           <SearchDrawer>
             <div>
-              <h3>Buscar Produtos</h3>
+              <h3>Buscar Cards</h3>
               <button onClick={handleSearch}>
                 <AiOutlineClose size={18} color="#000" />
               </button>
@@ -68,7 +68,7 @@ const Search: React.FC = () => {
               <input
                 type="text"
                 placeholder="Pesquisar"
-                onChange={(event) => handleProducts(event)}
+                onChange={(event) => handleCards(event)}
               />
               <button>
                 <FiSearch />
@@ -80,7 +80,7 @@ const Search: React.FC = () => {
                 {results &&
                   results.map((item: any) => (
                     <li key={item.index} onClick={handleSearch}>
-                      <Product product={item} />
+                      <Card card={item} />
                     </li>
                   ))}
               </ul>

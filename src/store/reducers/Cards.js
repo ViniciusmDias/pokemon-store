@@ -1,4 +1,4 @@
-import actionsTypes from '../../constants/Products';
+import actionsTypes from '../../constants/Cards';
 
 const INITIAL_STATE = {
   data: [],
@@ -8,15 +8,15 @@ const INITIAL_STATE = {
 
 const reducers = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case actionsTypes.REQUEST_PRODUCTS: 
+    case actionsTypes.REQUEST_PRODUCTS:
       return { ...state, loading: true, error: false };
-    case actionsTypes.SUCCESS_PRODUCTS: 
+    case actionsTypes.SUCCESS_PRODUCTS:
       return { ...state, data: action.payload, loading: false, error: false };
-    case actionsTypes.FAILURE_PRODUCTS: 
+    case actionsTypes.FAILURE_PRODUCTS:
       return { ...state, loading: false, error: true };
     default:
       return state;
   }
-} 
+}
 
 export default reducers;

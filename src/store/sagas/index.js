@@ -1,9 +1,9 @@
 import { all } from 'redux-saga/effects';
-import productsSagas from './Products';
+import cardsSagas from './Cards';
 
 function* sagas() {
   yield all([
-    productsSagas()
+    cardsSagas()
   ])
 }
 

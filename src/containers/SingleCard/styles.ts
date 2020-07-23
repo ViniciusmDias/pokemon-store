@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Product = styled.div`
+export const Card = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -21,7 +21,7 @@ export const Product = styled.div`
   }
 `
 
-export const ProductGroup = styled.div`
+export const CardGroup = styled.div`
   display: flex;
   flex-direction: column;
   margin: 10px 40px;
@@ -59,7 +59,7 @@ export const ProductGroup = styled.div`
   }
 `
 
-export const ProductInfo = styled.div`
+export const CardInfo = styled.div`
   text-align: center;
 
   h3 {
@@ -85,7 +85,7 @@ export const InfoPrice = styled.div`
   }
 `
 
-export const ProductSize = styled.div`
+export const CardSize = styled.div`
   margin: 12px 0;
 
   p {

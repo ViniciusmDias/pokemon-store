@@ -1,20 +1,20 @@
-import actionsTypes from '../../constants/Products';
+import actionsTypes from '../../constants/Cards';
 
 const actions = {
-  getProducts: () => ({
+  getCards: () => ({
     type: actionsTypes.REQUEST_PRODUCTS,
   }),
-  getProductsSuccess: (products) => ({
+  getCardsSuccess: (cards) => ({
     type: actionsTypes.SUCCESS_PRODUCTS,
-    payload: products
+    payload: cards
   }),
-  getProductsFailure: () => ({
+  getCardsFailure: () => ({
     type: actionsTypes.FAILURE_PRODUCTS,
   }),
-  searchProducts: () => ({
+  searchCards: () => ({
     type: actionsTypes.SEARCH_PRODUCTS,
   }),
-  searchProductsSuccess: (name) => ({
+  searchCardsSuccess: (name) => ({
     type: actionsTypes.SUCCESS_SEARCH_PRODUCTS,
     payload: name
   }),
